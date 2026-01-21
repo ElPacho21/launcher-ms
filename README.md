@@ -8,9 +8,26 @@
 
 Levantar docker:
 
+```
 docker compose build --no-cache
 docker compose up -d
+```
 
+## Prod
+
+1. Clonar el repositorio
+2. Crear un .env basado en el .env.template
+3. Ejecutar el comando 
+
+```
+docker compose -f docker-compose.prod.yml build
+```
+
+Levantar docker:
+
+```
+docker compose -f docker-compose.prod.yml up
+```
 
 ### Pasos para crear los Git Submodules
 
